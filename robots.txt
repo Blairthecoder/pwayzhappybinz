@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pwayzhappybinz.netlify.app/sitemap.xml
+Sitemap: https://pwayzhappybinz-695.netlify.app/sitemap.xml
