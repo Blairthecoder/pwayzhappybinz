@@ -369,10 +369,13 @@ p:last-child { margin-bottom: 0; }
   line-height: 1; letter-spacing: -.04em;
 }
 .special__price span { font-size: 1.7rem; margin-top: 7px; }
-.special__flag {
-  display: inline-block; padding: 4px 13px; margin-bottom: 9px;
+/* Needs the .special prefix so it outranks the generic `.special p` rule below,
+   otherwise the pill inherits body size and wraps onto two lines */
+.special .special__flag {
+  display: inline-block; padding: 4px 13px; margin-bottom: 10px;
   background: var(--lime); border-radius: 100px;
-  color: var(--ink); font-size: .75rem; font-weight: 800;
+  color: var(--ink); font-size: .75rem; font-weight: 800; line-height: 1.5;
+  white-space: nowrap;
 }
 .special h3 { margin-bottom: 6px; color: #fff; font-size: 1.35rem; }
 .special p { margin: 0; font-size: .96rem; }
@@ -544,8 +547,11 @@ p:last-child { margin-bottom: 0; }
   .hero__points { flex-direction: column; gap: 10px; }
   .hero__actions .button, .cta__actions .button { flex: 1 1 100%; }
   .cta__inner { flex-direction: column; align-items: flex-start; }
-  .special { grid-template-columns: 1fr; gap: 16px; padding: 26px 24px; }
+  .special { grid-template-columns: 1fr; gap: 12px; padding: 22px 20px 24px; }
   .special .button { justify-self: stretch; }
+  .special__price { font-size: 3.1rem; }
+  .special__price span { font-size: 1.35rem; margin-top: 4px; }
+  .special h3 { font-size: 1.22rem; }
   .footer__main { grid-template-columns: 1fr 1fr; gap: 32px 24px; }
   .footer__bottom { flex-direction: column; gap: 8px; }
   .bubbles i:nth-child(1) { width: 90px; height: 90px; }
