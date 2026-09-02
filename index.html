@@ -12,9 +12,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=4">
+  <link rel="stylesheet" href="/styles.css?v=5">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
@@ -137,14 +136,11 @@
   <main id="main">
 
     <section id="top" class="hero">
-      <div class="hero__media" aria-hidden="true">
-        <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&amp;fit=crop&amp;w=1600&amp;q=70"
-             alt="" fetchpriority="high" decoding="async">
-      </div>
+      <div class="bubbles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
       <div class="container hero__grid">
         <div class="hero__copy">
           <p class="eyebrow">We clean the funk out ya binz</p>
-          <h1>Trash bins washed clean, right at your curb</h1>
+          <h1>Trash bins washed <span class="hl">clean</span>, right at your curb</h1>
           <p class="hero__lead">
             We clean residential trash bins inside and out for homes in Arcola, Missouri City,
             Manvel, Rosharon and Fresno. Right now it is $25 for two bins.
@@ -251,60 +247,51 @@
 
         <div class="cards">
           <article class="card">
-            <img class="card__img"
-                 src="https://images.unsplash.com/photo-1596571026162-ba38f30d222e?auto=format&amp;fit=crop&amp;w=700&amp;q=70"
-                 alt="Residential trash and recycling bins ready for cleaning" loading="lazy" decoding="async">
-            <div class="card__body">
-              <h3>Inside and outside</h3>
-              <p>
-                We wash the interior walls and floor where spills collect, then clean the exterior,
-                the lid, and the handle you touch every week.
-              </p>
-            </div>
+            <h3>Inside and outside</h3>
+            <p>
+              We wash the interior walls and floor where spills collect, then clean the exterior,
+              the lid, and the handle you touch every week.
+            </p>
+          </article>
+
+          <article class="card card--dark">
+            <h3>Odor and residue</h3>
+            <p>
+              High pressure water and eco friendly cleaner break down the film that builds up
+              between pickups. That film is what you smell when you open the lid.
+            </p>
           </article>
 
           <article class="card">
-            <img class="card__img"
-                 src="https://images.unsplash.com/photo-1610891170442-79392fc76493?auto=format&amp;fit=crop&amp;w=700&amp;q=70"
-                 alt="High pressure water spray used to clean a trash bin" loading="lazy" decoding="async">
-            <div class="card__body">
-              <h3>Odor and residue</h3>
-              <p>
-                High pressure water and eco friendly cleaner break down the film that builds up
-                between pickups. That film is what you smell when you open the lid.
-              </p>
-            </div>
-          </article>
-
-          <article class="card">
-            <img class="card__img"
-                 src="https://images.unsplash.com/photo-1495770283154-c990d0050a12?auto=format&amp;fit=crop&amp;w=700&amp;q=70"
-                 alt="Trash bin waiting at the curb of a residential street" loading="lazy" decoding="async">
-            <div class="card__body">
-              <h3>Curbside and done</h3>
-              <p>
-                Leave your empty bins out on your service day. You do not need to be home,
-                and we set them back where we found them.
-              </p>
-            </div>
+            <h3>Curbside and done</h3>
+            <p>
+              Leave your empty bins out on your service day. You do not need to be home,
+              and we set them back where we found them.
+            </p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="why" class="section section--alt">
-      <div class="container split">
-        <div class="split__media">
-          <img src="https://images.unsplash.com/photo-1581883579507-019c44b711cb?auto=format&amp;fit=crop&amp;w=900&amp;q=70"
-               alt="Pressure washing equipment used for cleaning residential bins" loading="lazy" decoding="async">
-        </div>
-        <div class="split__copy">
+    <section id="why" class="section section--dark">
+      <div class="bubbles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="container">
+        <div class="section-head">
           <p class="eyebrow">Why it matters</p>
           <h2>What builds up in a Texas trash bin</h2>
-          <p>
-            Garbage bags leak. Meat trays, yard waste, diapers and drink cups all drain to the bottom
-            of the bin, and on the Gulf Coast that residue sits in the heat for a full week between pickups.
-          </p>
+        </div>
+        <div class="why__grid">
+          <div>
+            <p class="why__lead">
+              Garbage bags leak. Meat trays, yard waste, diapers and drink cups all drain to the
+              bottom of the bin, and on the Gulf Coast that residue sits in the heat for a full
+              week between pickups.
+            </p>
+            <div class="why__note">
+              Rinsing the outside with a garden hose just moves the problem around.
+              Washing the bin out removes the residue, so the smell goes with it.
+            </div>
+          </div>
           <ul class="ticklist">
             <li>Kills bacteria and germs on the lid and handle your family touches</li>
             <li>Eliminates odors that carry into the garage, driveway and front porch</li>
@@ -313,10 +300,6 @@
             <li>Environmentally friendly products, safe around kids and pets</li>
             <li>Fast, easy and hassle free, you do not lift a finger</li>
           </ul>
-          <p>
-            Rinsing the outside with a garden hose moves the problem around. Washing the bin out
-            removes the residue so the smell goes with it.
-          </p>
         </div>
       </div>
     </section>
@@ -360,6 +343,7 @@
         </div>
 
         <div class="special">
+          <div class="bubbles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
           <div class="special__price"><span>$</span>25</div>
           <div class="special__copy">
             <p class="special__flag">Current special</p>
@@ -546,9 +530,10 @@
     </section>
 
     <section class="cta">
+      <div class="bubbles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
       <div class="container cta__inner">
         <div>
-          <h2>Ready to get the funk out ya binz?</h2>
+          <h2>Ready to get the <span class="hl">funk</span> out ya binz?</h2>
           <p>Fill out the request form, call, or send a text. You will talk to Marcus directly.</p>
         </div>
         <div class="cta__actions">
@@ -599,7 +584,7 @@
 
     <div class="container footer__bottom">
       <span>&copy; <span id="year">2026</span> P'Wayz Happy Binz. All rights reserved.</span>
-      <span>Cleaner binz. Happier homes. Healthier you.</span>
+      <span class="footer__tagline">Cleaner binz. Happier homes. Healthier you.</span>
     </div>
   </footer>
 
@@ -608,6 +593,6 @@
     <a href="#request">Request service</a>
   </div>
 
-  <script src="/script.js?v=4" defer></script>
+  <script src="/script.js?v=5" defer></script>
 </body>
 </html>
