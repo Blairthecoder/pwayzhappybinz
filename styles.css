@@ -271,6 +271,8 @@ p:last-child { margin-bottom: 0; }
   width: 100%; height: 100%; max-height: 460px; object-fit: cover;
   border-radius: var(--radius-lg); box-shadow: var(--shadow-md);
 }
+/* Real photos keep their own aspect ratio instead of being cropped to a tall box */
+.split__media--photo img { height: auto; max-height: none; object-fit: contain; }
 .split__copy p { font-size: 1rem; }
 
 .about__contact { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
@@ -298,6 +300,25 @@ p:last-child { margin-bottom: 0; }
 
 /* --- Plans ------------------------------------------------------------- */
 
+.special {
+  display: grid; grid-template-columns: auto 1fr auto; gap: 28px; align-items: center;
+  padding: 26px 32px; margin-bottom: 28px;
+  background: var(--purple); border-radius: var(--radius-lg); color: rgba(255, 255, 255, .85);
+}
+.special__price {
+  display: flex; align-items: flex-start; gap: 2px;
+  color: var(--lime); font-family: var(--display); font-size: 3.6rem; font-weight: 800;
+  line-height: 1; letter-spacing: -.03em;
+}
+.special__price span { font-size: 1.6rem; margin-top: 6px; }
+.special__flag {
+  display: inline-block; padding: 3px 12px; margin-bottom: 8px;
+  background: var(--lime); border-radius: 100px;
+  color: var(--ink); font-size: .74rem; font-weight: 700; letter-spacing: .02em;
+}
+.special h3 { margin-bottom: 6px; color: #fff; font-size: 1.3rem; }
+.special p { margin: 0; font-size: .95rem; }
+
 .plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: start; }
 .plan {
   display: grid; gap: 10px; padding: 30px 28px 32px;
@@ -306,13 +327,14 @@ p:last-child { margin-bottom: 0; }
 }
 .plan h3 { margin: 0; }
 .plan p { font-size: .94rem; margin: 0; }
-.plan__price {
+/* These need .plan prefixes so they outrank the generic `.plan p` rule above */
+.plan .plan__price {
   display: flex; align-items: flex-start; gap: 2px;
   color: var(--ink); font-family: var(--display); font-size: 3rem; font-weight: 800;
   line-height: 1; letter-spacing: -.03em;
 }
-.plan__price span { font-size: 1.4rem; margin-top: 5px; }
-.plan__price--quote { font-size: 1.5rem; color: var(--purple); }
+.plan .plan__price span { font-size: 1.4rem; margin-top: 5px; }
+.plan .plan__price--quote { font-size: 1.5rem; color: var(--purple); }
 .plan__unit { color: var(--purple); font-weight: 600; font-size: .9rem !important; }
 .plan .button { margin-top: 8px; }
 
@@ -452,6 +474,9 @@ p:last-child { margin-bottom: 0; }
   .section { padding-block: 56px; }
   .cards, .areas, .plans, .steps { grid-template-columns: 1fr; }
   .field-row { grid-template-columns: 1fr; }
+  .special { grid-template-columns: 1fr; gap: 16px; padding: 24px; text-align: left; }
+  .special .button { justify-self: stretch; }
+  .hero__points { flex-direction: column; gap: 10px; }
   .hero__actions .button, .cta__actions .button { flex: 1 1 100%; }
   .cta__inner { flex-direction: column; align-items: flex-start; }
   .footer__main { grid-template-columns: 1fr 1fr; gap: 32px 24px; }
