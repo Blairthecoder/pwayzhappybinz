@@ -24,10 +24,15 @@ Form submissions appear in the Netlify dashboard under **Forms → service-reque
 
 ## Assets
 
+- `logo.png` is the full logo with the tagline, background removed.
+- `logo-nav.png` is the same logo with the tagline cropped off. It is the one
+  used in the header and footer, because the tagline is unreadable at nav size.
 - `trailer.jpg` is a real photo of the business's Jeep and wrapped trailer.
-- Remaining photos are hotlinked from Unsplash and should be replaced with real
-  photos of Marcus's work when they are available.
+- There are no stock photos and no external image dependencies.
 - Do not put flyer artwork on the site. Flyers are reference for copy and pricing only.
+
+The logo wordmark is white, so any surface it sits on must stay dark. That is why
+the header is purple rather than white.
 
 ## Cache busting
 
