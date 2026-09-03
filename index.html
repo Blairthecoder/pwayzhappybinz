@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=8">
+  <link rel="stylesheet" href="/styles.css?v=10">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="en_US">
@@ -90,7 +90,7 @@
       { "@type": "Question", "name": "How often should trash bins be cleaned?",
         "acceptedAnswer": { "@type": "Answer", "text": "Along the Gulf Coast, most households do well with monthly cleaning through the summer and quarterly through the cooler months. Heat is what turns leftover residue into odor." } },
       { "@type": "Question", "name": "What cleaning products do you use?",
-        "acceptedAnswer": { "@type": "Answer", "text": "We use environmentally friendly products along with high pressure water. They kill bacteria and germs and are safe around children, pets, and lawns." } },
+        "acceptedAnswer": { "@type": "Answer", "text": "We use high pressure water and cleaning products as part of our bin washing process. Contact us for the current product details and instructions for your household." } },
       { "@type": "Question", "name": "Which cities and neighborhoods do you serve?",
         "acceptedAnswer": { "@type": "Answer", "text": "Routes cover Arcola, Missouri City, Manvel, Rosharon and Fresno, Texas, including Southern Colony, Caldwell Ranch, Sienna, Riverstone, Quail Valley, Lake Olympia, Vicksburg, Pomona, Meridiana, Rodeo Palms, Sedona Lakes, Del Bello Lakes, Sterling Lakes, Lakes of Savannah, Glendale Lakes, Teal Run, Winfield Lakes and Andover Farms." } },
       { "@type": "Question", "name": "Do you require a contract?",
@@ -125,11 +125,12 @@
       <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
         <a href="#services">Services</a>
         <a href="#why">Why It Matters</a>
+        <a href="#results">Results</a>
         <a href="#process">How It Works</a>
         <a href="#pricing">Pricing</a>
         <a href="#areas">Service Areas</a>
         <a href="#faq">FAQ</a>
-        <a class="button button--sm button--lime" href="#request">Request Service</a>
+        <a class="button button--sm button--lime" href="#request">Book Now</a>
       </nav>
     </div>
   </header>
@@ -140,27 +141,34 @@
       <div class="bubbles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
       <div class="container hero__grid">
         <div class="hero__copy">
+          <a class="hero-offer" href="#request" aria-label="Book the grand opening special, two bins cleaned for $25">
+            <span class="hero-offer__label">Grand Opening Special</span>
+            <strong>2 Bins for $25</strong>
+            <span class="hero-offer__action">Claim Offer</span>
+          </a>
           <p class="eyebrow">We Clean the Funk Out Ya Binz</p>
           <h1>Trash Bins Washed <span class="hl">Clean</span>, Right at Your Curb</h1>
           <p class="hero__lead">
             We clean residential trash bins inside and out for homes in Arcola, Missouri City,
-            Manvel, Rosharon and Fresno. Right now it is $25 for two bins.
+            Manvel, Rosharon and Fresno. Leave them at the curb after pickup. You do not need to be home.
           </p>
           <ul class="hero__points">
-            <li>Kills bacteria and germs</li>
-            <li>Eliminates odors</li>
-            <li>Eco friendly products</li>
-            <li>No contracts</li>
+            <li>Washes away grime and residue</li>
+            <li>Helps control stubborn bin odors</li>
+            <li>No need to be home</li>
+            <li>One time or recurring service</li>
           </ul>
           <div class="hero__actions">
             <a class="button button--lime" href="tel:+17132316321">Call 713-231-6321</a>
-            <a class="button button--ghost" href="sms:+17132316321?&amp;body=Hi%20Marcus%2C%20I%27d%20like%20to%20schedule%20trash%20bin%20cleaning.">Send a Text</a>
+            <a class="button button--ghost" href="sms:+17132316321?&amp;body=Hi%20Marcus%2C%20I%27d%20like%20to%20schedule%20trash%20bin%20cleaning.">Text Us</a>
+            <a class="button button--ghost" href="#request">Book Now</a>
           </div>
         </div>
 
         <div class="form-card" id="request">
-          <h2 class="form-card__title">Request Service</h2>
-          <p class="form-card__intro">Send your details and Marcus will call you back to confirm your day and price.</p>
+          <p class="form-card__offer">Grand Opening: 2 Bins for $25</p>
+          <h2 class="form-card__title">Book Your Bin Cleaning</h2>
+          <p class="form-card__intro">Send your details and Marcus will call you back to confirm your service day.</p>
           <form class="request-form" name="service-request" method="POST" action="/thank-you/" data-netlify="true" netlify-honeypot="company-website">
             <input type="hidden" name="form-name" value="service-request">
             <p class="form-honeypot"><label>Do not fill this out: <input name="company-website" tabindex="-1"></label></p>
@@ -219,7 +227,7 @@
               <textarea name="message" rows="3" placeholder="Gate code, preferred day, questions"></textarea>
             </label>
 
-            <button class="button button--full" type="submit">Request My Cleaning</button>
+            <button class="button button--full" type="submit">Book Now</button>
             <p class="form-note">Submitting this form does not book an appointment. We call to confirm before service.</p>
           </form>
         </div>
@@ -230,7 +238,7 @@
       <div class="container trustbar__grid">
         <div><strong>$25</strong><span>Two bins, current special</span></div>
         <div><strong>5 cities</strong><span>Fort Bend &amp; Brazoria County</span></div>
-        <div><strong>Eco friendly</strong><span>Safe around kids and pets</span></div>
+        <div><strong>Curbside easy</strong><span>No need to be home</span></div>
         <div><strong>Owner run</strong><span>You always reach Marcus</span></div>
       </div>
     </section>
@@ -258,8 +266,8 @@
           <article class="card card--dark">
             <h3>Odor and Residue</h3>
             <p>
-              High pressure water and eco friendly cleaner break down the film that builds up
-              between pickups. That film is what you smell when you open the lid.
+              High pressure water and cleaning products help lift the film and residue that build
+              up between pickups and contribute to stubborn bin odors.
             </p>
           </article>
 
@@ -270,6 +278,45 @@
               and we set them back where we found them.
             </p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="results" class="section section--results" aria-labelledby="results-heading">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow">Real Local Results</p>
+          <h2 id="results-heading">See the Difference a Real Bin Wash Makes</h2>
+          <p class="section-head__lead">
+            Real before-and-after photos from a P'Wayz Happy Binz cleaning.
+            No stock photos and no borrowed results.
+          </p>
+        </div>
+        <div class="results-gallery" aria-label="Before and after bin cleaning photos">
+          <figure class="result-photo">
+            <div class="result-photo__frame">
+              <img src="/before-bin.jpg?v=1"
+                   alt="Inside of a trash bin before cleaning, with grass and residue on the walls and bottom"
+                   width="1536" height="2048" loading="lazy" decoding="async">
+              <span class="result-photo__label">Before</span>
+            </div>
+            <figcaption>Built-up yard debris and residue before service</figcaption>
+          </figure>
+          <div class="results-gallery__arrow" aria-hidden="true">&#8594;</div>
+          <figure class="result-photo">
+            <div class="result-photo__frame result-photo__frame--after">
+              <img src="/after-bin.jpg?v=1"
+                   alt="Inside of the same trash bin after cleaning, with the walls and bottom washed clean"
+                   width="1536" height="2048" loading="lazy" decoding="async">
+              <span class="result-photo__label">After</span>
+            </div>
+            <figcaption>The same bin after a P'Wayz Happy Binz wash</figcaption>
+          </figure>
+        </div>
+        <p class="results-note">Have a bin that needs this kind of reset? Book the grand opening special today.</p>
+        <div class="results-actions">
+          <a class="button button--lime" href="#request">Book 2 Bins for $25</a>
+          <a class="button button--outline" href="sms:+17132316321?&amp;body=Hi%20Marcus%2C%20I%27d%20like%20to%20ask%20about%20bin%20cleaning.">Text Marcus</a>
         </div>
       </div>
     </section>
@@ -294,13 +341,27 @@
             </div>
           </div>
           <ul class="ticklist">
-            <li>Kills bacteria and germs on the lid and handle your family touches</li>
-            <li>Eliminates odors that carry into the garage, driveway and front porch</li>
-            <li>Cuts down flies and maggots in the warm months</li>
-            <li>Discourages roaches, ants and rodents at the side of the house</li>
-            <li>Environmentally friendly products, safe around kids and pets</li>
+            <li>Washes grime and residue from the inside, outside, lid and handle</li>
+            <li>Helps remove the residue that contributes to unpleasant bin odors</li>
+            <li>Regular cleaning removes food residue that can attract flies and other pests</li>
+            <li>High pressure washing reaches areas that are difficult to clean with a garden hose</li>
+            <li>Cleaning products are used as part of the washing process</li>
             <li>Fast, easy and hassle free, you do not lift a finger</li>
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="recurring-callout" aria-labelledby="recurring-heading">
+      <div class="container recurring-callout__inner">
+        <div>
+          <p class="eyebrow">Keep the Funk From Coming Back</p>
+          <h2 id="recurring-heading">Choose Monthly or Quarterly Cleaning</h2>
+          <p>Stay ahead of residue and odors with a recurring curbside route. No need to be home, and no long-term contract is required.</p>
+        </div>
+        <div class="recurring-callout__choices" aria-label="Recurring service options">
+          <a href="#request"><strong>Monthly</strong><span>Best for frequent upkeep</span></a>
+          <a href="#request"><strong>Quarterly</strong><span>A fresh reset every 3 months</span></a>
         </div>
       </div>
     </section>
@@ -347,7 +408,7 @@
           <div class="bubbles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
           <div class="special__price"><span>$</span>25</div>
           <div class="special__copy">
-            <p class="special__flag">Current Special</p>
+            <p class="special__flag">Grand Opening Special</p>
             <h3>Two Bins Cleaned for $25</h3>
             <p>Our regular rate is $35 for the first bin, so this is the cheapest way to try us out.</p>
           </div>
@@ -355,14 +416,6 @@
         </div>
 
         <div class="plans">
-          <article class="plan">
-            <h3>One Time Clean</h3>
-            <p class="plan__price"><span>$</span>35</p>
-            <p class="plan__unit">First bin, then $10 each additional bin</p>
-            <p>Good for a first clean, a move in, or a bin that has gotten away from you.</p>
-            <a class="button button--outline button--full" href="#request">Book a One Time Clean</a>
-          </article>
-
           <article class="plan plan--featured">
             <p class="plan__flag">Most Popular</p>
             <h3>Monthly</h3>
@@ -372,12 +425,21 @@
             <a class="button button--full" href="#request">Get Monthly Pricing</a>
           </article>
 
-          <article class="plan">
+          <article class="plan plan--recurring">
+            <p class="plan__flag plan__flag--soft">Recurring</p>
             <h3>Quarterly</h3>
             <p class="plan__price plan__price--quote">Call for Pricing</p>
             <p class="plan__unit">A deep clean every 3 months</p>
             <p>A steady reset for households that keep the bin in the garage or away from the house.</p>
             <a class="button button--outline button--full" href="#request">Get Quarterly Pricing</a>
+          </article>
+
+          <article class="plan">
+            <h3>One Time Clean</h3>
+            <p class="plan__price"><span>$</span>35</p>
+            <p class="plan__unit">First bin, then $10 each additional bin</p>
+            <p>Good for a first clean, a move in, or a bin that has gotten away from you.</p>
+            <a class="button button--outline button--full" href="#request">Book a One Time Clean</a>
           </article>
         </div>
       </div>
@@ -516,7 +578,7 @@
           </details>
           <details>
             <summary>What Products Do You Use?<span aria-hidden="true"></span></summary>
-            <p>Environmentally friendly products along with high pressure water. They kill bacteria and germs and are safe around children, pets and lawns.</p>
+            <p>We use high pressure water and cleaning products as part of our bin washing process. Contact us for current product details and any household-specific questions. Product claims depend on the label and directions for the products being used.</p>
           </details>
           <details>
             <summary>Do You Serve My Neighborhood?<span aria-hidden="true"></span></summary>
@@ -538,7 +600,7 @@
           <p>Fill out the request form, call, or send a text. You will talk to Marcus directly.</p>
         </div>
         <div class="cta__actions">
-          <a class="button button--lime" href="#request">Request Service</a>
+          <a class="button button--lime" href="#request">Book Now</a>
           <a class="button button--ghost" href="tel:+17132316321">Call 713-231-6321</a>
         </div>
       </div>
@@ -592,9 +654,9 @@
 
   <div class="mobile-cta" aria-label="Quick contact">
     <a href="tel:+17132316321">Call Now</a>
-    <a href="#request">Request Service</a>
+    <a href="#request">Book Now</a>
   </div>
 
-  <script src="/script.js?v=8" defer></script>
+  <script src="/script.js?v=10" defer></script>
 </body>
 </html>

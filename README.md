@@ -28,6 +28,7 @@ Form submissions appear in the Netlify dashboard under **Forms → service-reque
 - `logo-nav.png` is the same logo with the tagline cropped off. It is the one
   used in the header and footer, because the tagline is unreadable at nav size.
 - `trailer.jpg` is a real photo of the business's Jeep and wrapped trailer.
+- `before-bin.jpg` and `after-bin.jpg` are the real before-and-after cleaning photos.
 - There are no stock photos and no external image dependencies.
 - Do not put flyer artwork on the site. Flyers are reference for copy and pricing only.
 
