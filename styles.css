@@ -21,7 +21,7 @@
   --white: #fff;
   --bg-alt: #f7f7fa;
 
-  --display: "Plus Jakarta Sans", "Segoe UI", Arial, sans-serif;
+  --display: "Fraunces", Georgia, "Times New Roman", serif;
   --body: "Inter", "Segoe UI", Arial, sans-serif;
 
   --shadow-sm: 0 1px 2px rgba(22, 22, 29, .06), 0 4px 12px rgba(22, 22, 29, .05);
@@ -60,9 +60,9 @@ h1, h2, h3, h4, p { margin-top: 0; }
 h1, h2, h3, h4 {
   color: var(--ink);
   font-family: var(--display);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.12;
-  letter-spacing: -.028em;
+  letter-spacing: -.01em;
 }
 
 h1 { margin-bottom: 18px; font-size: clamp(2.3rem, 4.4vw, 3.5rem); }
@@ -223,7 +223,7 @@ p:last-child { margin-bottom: 0; }
 }
 .hero__grid {
   display: grid; grid-template-columns: 1.05fr .95fr;
-  gap: clamp(32px, 5vw, 64px); align-items: center;
+  gap: clamp(32px, 5vw, 64px); align-items: start;
 }
 .hero__copy { color: var(--on-dark); }
 .hero__copy h1 { color: #fff; }
